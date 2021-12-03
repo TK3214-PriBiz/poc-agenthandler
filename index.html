@@ -10,10 +10,13 @@
     if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
     {
         window.location.href = "https-intunemam://www.google.com"
+        //Intune未登録デバイスに対する処理を既述する。
+        setTimeout(function () { 
+        }, 25);
     }
     else
     {
-        window.location = ""
+        window.location = "https://www.google.co.in/?gfe_rd=cr&ei=sLSuWM4B7MjwB-6LtagE"
     }
 }
 
