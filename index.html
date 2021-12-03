@@ -1,10 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>Redirecting...</title>
-    <script type="text/javascript" src="client.js"></script>
+<meta http-equiv="content-type" content="text/html" />
+<meta name="author" content="gencyolcu" />
+<title>Social Media Share</title>
+<script>    
+ function openProfile() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+    {
+        window.location.href = "googlechrome://www.google.com"
+        setTimeout(function () { 
+        window.location = "https://itunes.apple.com/us/app/yourApp/id593274564?ls=1&mt=8";}, 25);
+    }
+    else
+    {
+        window.location = "https://www.google.co.in/?gfe_rd=cr&ei=sLSuWM4B7MjwB-6LtagE"
+    }
+}
+
+</script>
 </head>
-<body>
-    <a href="microsoft edge:www.google.com">アプリを起動</a>
-</body>
+<body onload="openProfile()"></body>
 </html>
